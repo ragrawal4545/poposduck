@@ -3,3 +3,4 @@ _site
 Gemfile.lock
 *.gem
 config.js
+_config.yml
