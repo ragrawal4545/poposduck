@@ -1,15 +1,5 @@
 ---
 layout: map
-
-- title: Paris
-  url: http://google.fr
-  location:
-  latitude: 48.8587741
-  longitude: 2.2074741
-
-- title: Madrid
-  url: http://google.es
-  location:
-  latitude: 40.4378698
-  longitude: -3.8196204
 ---
+
+{% google_map src="_posts" width="100%" height="100%" %}
