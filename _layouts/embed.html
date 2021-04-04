@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <script type='text/javascript' src='config.js'></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145920619-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-145920619-1');
+</script>
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <h3>Our CoC's Student Organizations</h3>
+            <ul id="sidebar">
+                {% for item in page.sections['about'] %}
+                <li>{{item.title}}</li>
+                {% endfor %}
+            </ul>
+            <p style="font-family: Roboto">Find out more about each org <a href="https://www.cc.gatech.edu/content/student-organizations">here</a>.</p>
+        </header>
+
+        <section>
+            <div id='calendar'></div>
+            <div class=googleCalendar>
+<iframe src="https://calendar.google.com/calendar/b/3/embed?height=500&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Z3Rjb2NzdHVkZW50Y291bmNpbEBnbWFpbC5jb20&amp;src=amszc3BnNTd0c3NqYXNpaTEza3U1aWd2cDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZmlsbW1ha2Vyc2d0QGdtYWlsLmNvbQ&amp;src=MDM3b2JhOTlmMDBlN3BqZW1mNWlvOGRmZzhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=dHQ3NHBoNDNqaGNybTRldGpjbHBoc2QwdDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Z3RiaWdkYXRhQGdtYWlsLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=MWc2MmJpdjQ1Z3IzaG9iNmxmaDMwMXAxdmw0bHRrM2VAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bWlub3JpdGllc2F0Y29jQGdtYWlsLmNvbQ&amp;src=ZWVrcG52bzZqNmZ1YnA0NWZ2NGFybW85Y29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=dGhlb3J5Y2x1Ymd0QGdtYWlsLmNvbQ&amp;src=d2FjY2d0QGdtYWlsLmNvbQ&amp;color=%23039BE5&amp;color=%239E69AF&amp;color=%238E24AA&amp;color=%23795548&amp;color=%23F4511E&amp;color=%239E69AF&amp;color=%230B8043&amp;color=%23AD1457&amp;color=%239E69AF&amp;color=%233F51B5&amp;color=%23F6BF26&amp;color=%23F6BF26&amp;showTitle=0&amp;showPrint=0" style="border-width:0" width="600" height="500" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </section>
+        
+
+        <footer>
+            {% if site.github.is_project_page %}
+            <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+            {% endif %}
+            <p>
+                <small>
+                    Brought to you by our <a href="{{ "/" | absolute_url }}">{{ site.title | embed: site.github.repository_name }}</a>. Hosted on GitHub Pages.
+                </small>
+            </p>
+        </footer>
+    </div>
+
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    {% if site.google_analytics %}
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    {% endif %}
+</body>
+
+</html>
