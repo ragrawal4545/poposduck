@@ -37,26 +37,6 @@ For these reasons, Tufte CSS encourages caution before reaching for a list eleme
 
 ## Figures
 
-### Full Width Figures
-
-If you need a full-width image or figure, another custom liquid tag is available to use. Oddly enough, it is named 'fullwidth', and this markup:
-
-`{{ "{% fullwidth 'assets/img/napoleons-march.png' 'Napoleon's March *(Edward Tufte’s English translation)*' "}} %}`
-
-Yields this:
-
-{% fullwidth 'assets/img/napoleons-march.png' "Napoleon's March *(Edward Tufte’s English translation)*" %}
-
-### Main Column Figures
-
-Besides margin and full width figures, you can of course also include figures constrained to the main column. Yes, you guessed it, a custom liquid tag rides to the rescue once again:
-
-`{{ "{% maincolumn 'assets/img/export-imports.png' 'From Edward Tufte, *Visual Display of Quantitative Information*, page 92' "}} %}`
-
-yields this:
-
-{% maincolumn "assets/img/exports-imports.png" "From Edward Tufte, *Visual Display of Quantitative Information*, page 92" %}
-
 ## Sidenotes and Margin notes
 
 One of the most prominent and distinctive features of Tufte's style is the extensive use of sidenotes and margin notes. Perhaps you have noticed their use in this document already. You are very astute.
