@@ -1,6 +1,11 @@
-title: College of Computing Student Council at Georgia Tech
+title: SF Downtown - POPOS Map
 logo: /assets/img/coclogo.jpg
-description: Platform for CoC Students to come together and discuss issues concerning the CoC and its future
+description: Map of POPOS's in Downtown, subject and not subject to the 1985 Downtown Plan
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
+plugins:
+  - jekyll-maps
+maps:
+  google:
+    api_key: AIzaSyDf0evQzrDbLUck2OEJ7FUrzxtw3RUGzX4
