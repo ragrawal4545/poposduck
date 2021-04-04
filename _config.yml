@@ -12,6 +12,9 @@ description: 'A brazen two-column <a href="http://jekyllrb.com" target="_blank">
 url: http://hyde.getpoole.com
 baseurl: ""
 
+plugins:
+  - jekyll-maps
+
 author:
   name: "Mark Otto"
   url: https://twitter.com/mdo
