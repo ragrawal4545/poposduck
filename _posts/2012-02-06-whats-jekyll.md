@@ -11,4 +11,15 @@ It's an immensely useful tool and one we encourage you to use here with Hyde.
 
 Find out more by [visiting the project on GitHub](https://github.com/mojombo/jekyll).
 
-{% include google-map.html latitude=-45.8787605 longitude=170.5027976 zoom=5 %}
+{% google_map %}
+location:
+
+- latitude: 51.5285582
+  longitude: -0.2416807
+- latitude: 52.5285582
+  longitude: -2.2416807
+- title: custom marker title
+  image: custom marker image
+  url: custom marker url
+  latitude: 51.5285582
+  longitude: -0.2416807

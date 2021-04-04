@@ -1,7 +1,9 @@
 # Dependencies
 markdown: redcarpet
 highlighter: pygments
-google_maps_javascript_api_key: "AIzaSyDf0evQzrDbLUck2OEJ7FUrzxtw3RUGzX4"
+
+plugins:
+  - jekyll-maps
 
 # Permalinks
 permalink: pretty
@@ -24,3 +26,17 @@ version: 2.1.0
 
 github:
   repo: https://github.com/poole/hyde
+
+maps:
+  google:
+    api_key: AIzaSyDf0evQzrDbLUck2OEJ7FUrzxtw3RUGzX4
+location:
+  - latitude: 51.5285582
+    longitude: -0.2416807
+  - latitude: 52.5285582
+    longitude: -2.2416807
+  - title: custom marker title
+    image: custom marker image
+    url: custom marker url
+    latitude: 51.5285582
+    longitude: -0.2416807
