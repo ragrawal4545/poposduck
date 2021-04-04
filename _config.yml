@@ -1,6 +1,7 @@
 # Dependencies
 markdown: redcarpet
 highlighter: pygments
+google_maps_javascript_api_key: "AIzaSyDf0evQzrDbLUck2OEJ7FUrzxtw3RUGzX4"
 
 # Permalinks
 permalink: pretty
@@ -11,9 +12,6 @@ tagline: "A Jekyll theme"
 description: 'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url: http://hyde.getpoole.com
 baseurl: ""
-
-plugins:
-  - jekyll-maps
 
 author:
   name: "Mark Otto"
