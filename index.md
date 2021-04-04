@@ -1,8 +1,6 @@
 ---
 title: Test Page
-layout: default
+layout: map
 ---
 
 ** Jekyll Maps Plugin **
-
-{% google_map src="_posts" width="100%" height="100%" %}
